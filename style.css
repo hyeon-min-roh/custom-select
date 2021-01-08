@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{ font-family: 'Noto Sans KR', sans-serif; }
+
 select {display:none;}
 .select-wrapper {position:relative; display:inline-block;}
-.select-wrapper > select {display:none;}
-.select-wrapper .select-custom .select {min-width:100px; display:inline-block; height:35px; line-height:33px; padding:0 10px; border:1px solid #ddd; border-radius:2px; box-sizing:border-box; font-size:14px; cursor:pointer;}
-.select-wrapper .select-custom ul {position:absolute; list-style:none; padding:0; margin:0;}
-.select-wrapper .select-custom ul li {cursor:pointer;}
+.select-wrapper .select-custom .select {min-width:100px; display:inline-block; height:35px; line-height:33px; padding:0 10px; border:1px solid #ddd; border-radius:2px; box-sizing:border-box; font-size:14px; cursor:pointer; transition:all 0.2s ease; background-image:url('./img/i_select.svg'); background-repeat:no-repeat; background-size:12px; background-position:90% center;}
+.select-wrapper .select-custom .select:hover {border-color:#367cff;}
+.select-wrapper .select-custom ul {position:absolute; top:40px; list-style:none; min-width:98px; max-height:150px; overflow:auto; padding:0; margin:0; border:1px solid #ddd; border-radius:2px;}
+.select-wrapper .select-custom ul li {height:30px; line-height:30px; padding:0 10px; cursor:pointer; font-size:14px;  transition:all 0.1s ease;}
+.select-wrapper .select-custom ul li:hover {background-color:#e0f7ff;}
+
+/*scroll*/
+.select-wrapper .select-custom ul::-webkit-scrollbar { width: 2px; background-color:#fff; }
+.select-wrapper .select-custom ul::-webkit-scrollbar-thumb { border-radius:2px; background-color: #bbb;}

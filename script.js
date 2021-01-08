@@ -12,7 +12,7 @@ var selectCustom = (elSelect) => {
 		created(){
 		
 			var v = this;
-			v.title = $(elSelect).data("title") ? $(elSelect).data("title") : "선택";
+			v.title = $(elSelect).data("title") ? $(elSelect).data("title") : "-";
 			v.name = $(elSelect).attr("name");
 			
 			$(elSelect).find("option").each(function(){
